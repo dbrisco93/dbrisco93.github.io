@@ -45,6 +45,27 @@ body, html {
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
+/* Skills */
+.skills-table {
+    /* width: 75%; */
+    text-align: center;
+}
+
+.skills-cell {
+    padding: 20px;
+}
+
+.skills-img {
+    width: 150px;
+    height: 150px;
+}
+
+.skills-img-rounded {
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -91,7 +112,7 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
   <p class="w3-center"><em>Web Developer</em></p>
-  <p>I love to think of myself as a creative thinker. Someone who enjoys a challenge or puzzle. 
+  <p>I would describe myself as a creative thinker. Someone who enjoys a challenge or puzzle. 
       But also someone who wants to make things known in a way for people to see and understand clearly. 
       Which is why I chose to be a front end developer. My specialties include HTML, CSS, Javascript, and ReactJS. 
         I also have a basic understanding on SQLLite and PostgresSQL along with Ruby on Rails.</p>
@@ -116,8 +137,24 @@ body, html {
       </p>
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <p class="w3-large w3-center w3-padding-16">Skills</p>
+  <!-- <div class="w3-col m6 w3-center w3-padding-large"> -->
+      <table class="skills-table">
+          <tr>
+              <td class="skills-cell"><img src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/22-512.png" class="skills-img"></td>
+              <td class="skills-cell"><img src="https://www.iconsdb.com/icons/preview/royal-blue/css-xxl.png" class="skills-img"></td>
+              <td class="skills-cell"><img src="data:image/png;base64,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" class="skills-img"></td>
+              <td class="skills-cell"><img src="https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png" class="skills-img-rounded"></td>
+   </tr>
+          <tr>
+            <td class="skills-cell"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png" class="skills-img-rounded"></td>
+            <td class="skills-cell"><img src="data:image/png;base64,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" class="skills-img-rounded"></td>
+            <td class="skills-cell"><img src="https://www.adobe.com/content/dam/cc/icons/pr_cc_app_RGB.svg" class="skills-img"></td>
+            <td class="skills-cell"><img src="https://www.photoshop.com/images/apps/photoshop.png" class="skills-img"></td>
+          </tr>
+      </table>
+  <!-- </div> -->
+  <!-- <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
   </div>
@@ -128,7 +165,7 @@ body, html {
   <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
+  </div> -->
 </div>
 
 <!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16">
@@ -219,8 +256,7 @@ body, html {
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
+  <h3 class="w3-center">CONTACT</h3>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
@@ -228,25 +264,10 @@ body, html {
     </div>
     <div class="w3-col m8 w3-panel">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Houston, TX<br>
+        <!-- <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br> -->
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: dbrisco93@gmail.com<br>
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
-        </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
     </div>
   </div>
 </div>
@@ -257,7 +278,7 @@ body, html {
   <div class="w3-xlarge w3-section">
    <a href="http://instagram.com/domlarae" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
    <a href="http://twitter.com/domlarae" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a> 
-    <a href="http://linkedin.com/dbrisco93" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href=" https://www.linkedin.com/in/dominiquebrisco/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
